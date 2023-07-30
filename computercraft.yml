@@ -30,3 +30,151 @@ globals:
     args:
     - type: nil
       required: false
+  turtle.dig:
+    args:
+    - type: {"left", "right"}
+      required: false
+  turtle.digUp:
+    args:
+    - type: {"left", "right"}
+      required: false
+  turtle.digDown:
+    args:
+    - type: {"left", "right"}
+      required: false
+  turtle.place:
+    args:
+    - type: string
+      required: false
+  turtle.placeUp:
+    args:
+    - type: string
+      required: false
+  turtle.placeDown:
+    args:
+    - type: string
+      required: false
+  turtle.drop:
+    args:
+    - type: number
+      required: false
+  turtle.dropUp:
+    args:
+    - type: number
+      required: false
+  turtle.dropDown:
+    args:
+    - type: number
+      required: false
+  turtle.select:
+    args:
+    - type: number
+      required: true
+  turtle.getItemCount:
+    args:
+    - type: number
+      required: false
+  turtle.getItemSpace:
+    args:
+    - type: number
+      required: false
+  turtle.detect:
+    args:
+    - type: nil
+      required: false
+  turtle.detectUp:
+    args:
+    - type: nil
+      required: false
+  turtle.detectDown:
+    args:
+    - type: nil
+      required: false
+  turtle.compare:
+    args:
+    - type: nil
+      required: false
+  turtle.compareUp:
+    args:
+    - type: nil
+      required: false
+  turtle.compareDown:
+    args:
+    - type: nil
+      required: false
+  turtle.attack:
+    args:
+    - type: {"left", "right"}
+      required: false
+  turtle.attackUp:
+    args:
+    - type: {"left", "right"}
+      required: false
+  turtle.attackDown:
+    args:
+    - type: {"left", "right"}
+      required: false
+  turtle.suck:
+    args:
+    - type: number
+      required: false
+  turtle.suckUp:
+    args:
+    - type: number
+      required: false
+  turtle.suckDown:
+    args:
+    - type: number
+      required: false
+  turtle.getFuelLevel:
+    args:
+    - type: nil
+      required: false
+  turtle.refuel:
+    args:
+    - type: number
+      required: false
+  turtle.compareTo:
+    args:
+    - type: number
+      required: true
+  turtle.transferTo:
+    args:
+    - type: number
+      required: true
+    - type: number
+      required: false
+  turtle.getSelectedSlot:
+    args:
+    - type: nil
+      required: false
+  turtle.getFuelLimit:
+    args:
+    - type: nil
+      required: false
+  turtle.equipLeft:
+    args:
+    - type: nil
+      required: false
+  turtle.equipRight:
+    args:
+    - type: nil
+      required: false
+  turtle.inspect:
+    args:
+    - type: nil
+      required: false
+  turtle.inspectUp:
+    args:
+    - type: nil
+      required: false
+  turtle.inspectDown:
+    args:
+    - type: nil
+      required: false
+  turtle.getItemDetail:
+    args:
+    - type: number
+      required: true
+    - type: boolean
+      required: false
