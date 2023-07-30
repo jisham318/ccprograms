@@ -21,8 +21,12 @@ for _, chest in pairs(wrappedChests) do
     end
 end
 
+local xSize, ySize = term.getSize()
+
 term.clear()
-term.setCursorPos(1, 1)
+local yPosition = 1
 for name, count in pairs(allItems) do
-    print(name .. ": x" .. count)
+    term.setPosition(1, yPosition)
+    term.write(name .. ": x" .. count)
+    yPosition = yPosition + 1
 end
