@@ -11,12 +11,14 @@ for key, position in pairs(chests) do
 end
 
 local allItems = {}
-for _, chest in pairs(wrappedChests) do
+for chestName, chest in pairs(wrappedChests) do
     for slot, item in pairs(chest.list()) do
         if allItems[item.name] == nil then
-            allItems[item.name] = item.count
+            allItems[item.name] = {count = item.count, inventory = chestName}
         else
-            allItems[item.name] = allItems[item.name] + item.count
+            local count = allItems[item.name].count + item.count
+            allItems[item.name] = {count = count, inventory = item.inventory}
+            chest.pushItems(item.inventory, slot)
         end
     end
 end
