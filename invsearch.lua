@@ -26,7 +26,7 @@ local xSize, ySize = term.getSize()
 term.clear()
 local yPosition = 1
 for name, count in pairs(allItems) do
-    term.setPosition(1, yPosition)
+    term.setCursorPos(1, yPosition)
     term.write(name .. ": x" .. count)
     yPosition = yPosition + 1
 end
