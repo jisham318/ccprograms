@@ -17,8 +17,9 @@ for chestName, chest in pairs(wrappedChests) do
             allItems[item.name] = {count = item.count, inventory = chestName}
         else
             local count = allItems[item.name].count + item.count
-            allItems[item.name] = {count = count, inventory = item.inventory}
-            chest.pushItems(item.inventory, slot)
+            local inventoryName = allItems[item.name].inventory
+            allItems[item.name] = {count = count, inventory = inventoryName}
+            chest.pushItems(inventoryName, slot)
         end
     end
 end
