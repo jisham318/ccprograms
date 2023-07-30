@@ -182,3 +182,62 @@ globals:
       required: true
     - type: boolean
       required: false
+  vector.new:
+    args:
+    - type: number
+      required: true
+    - type: number
+      required: true
+    - type: number
+      required: true
+
+structs:
+  Vector:
+    add:
+      method: true
+      args:
+        - type: Vector
+          required: true
+    sub:
+      method: true
+      args:
+        - type: Vector
+          required: true
+    mul:
+      method: true
+      args:
+        - type: Vector
+          required: true
+    div:
+      method: true
+      args:
+        - type: Vector
+          required: true
+    unm:
+      method: true
+    dot:
+      method: true
+      args:
+        - type: Vector
+          required: true
+    cross:
+      method: true
+      args:
+        - type: Vector
+          required: true
+    length:
+      method: true
+    normalize:
+      method: true
+    round:
+      method: true
+      args:
+        - type: number
+          required: false
+    tostring:
+      method: true
+    equals:
+      method: true
+      args:
+        - type: Vector
+          required: true
