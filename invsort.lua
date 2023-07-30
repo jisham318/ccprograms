@@ -1,7 +1,7 @@
 local chests = { "minecraft:chest_6", "minecraft:chest_7", "minecraft:chest_8" }
 local wrappedChests = {}
 
-for key, position in pairs(chests) do
+for _, key in pairs(chests) do
     wrappedChests[key] = peripheral.wrap(key)
 end
 
