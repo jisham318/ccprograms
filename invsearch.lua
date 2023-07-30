@@ -27,9 +27,10 @@ end
 local xSize, ySize = term.getSize()
 
 term.clear()
+term.setCursorPos(1, 1)
 --local yPosition = 1
 for name, count in pairs(allItems) do
-    term.setCursorPos(1, yPosition)
+    --term.setCursorPos(1, yPosition)
     print(name .. ": x" .. count)
     --yPosition = yPosition + 1
     --if yPosition > ySize then
