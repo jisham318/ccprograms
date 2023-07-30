@@ -2,6 +2,10 @@
 base: lua51 # We will be extending off of Lua 5.1.
 
 globals:
+  sleep:
+    args:
+    - type: number
+      required: true
   turtle.craft:
     args:
     - type: number
