@@ -29,4 +29,7 @@ for name, count in pairs(allItems) do
     term.setCursorPos(1, yPosition)
     term.write(name .. ": x" .. count)
     yPosition = yPosition + 1
+    if yPosition > ySize then
+        break
+    end
 end
